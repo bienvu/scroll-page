@@ -41,7 +41,7 @@ listElm.on('scroll touch', function() {
   // console.log(listElm.height());
   // console.log(test);
   // console.log(listElm.scrollHeight());
-  if (topSpace + heightScreen >= heightScroll) {
+  if (topSpace + heightScreen >= heightScroll - 200) {
     loadMore();
   }
 });
