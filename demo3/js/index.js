@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
   loadMore();
+
+
 });
 
 var listElm = $('#infinite-list');
@@ -32,12 +34,17 @@ var loadMore = function() {
 //     });
 
 // Detect when scrolled to bottom.
-listElm.on('scroll touch', function() {
+// listElm.on('scroll touch', function() {
+// $(window).on('scroll', function() {
+$(window).on('scroll', function() {
   var heightScroll = document.getElementById("infinite-list").scrollHeight,
-      heightScreen = listElm.height(),
-      topSpace = listElm.scrollTop();
+  // var heightScroll = document.getElementById("infinite-list").offset().top,
+      heightScreen = $(window).height(),
+      topSpace = $(window).scrollTop();
 
-  // console.log(listElm.scrollTop());
+  console.log(heightScroll);
+  console.log(heightScreen);
+  console.log(topSpace);
   // console.log(listElm.height());
   // console.log(test);
   // console.log(listElm.scrollHeight());
@@ -45,5 +52,5 @@ listElm.on('scroll touch', function() {
     loadMore();
   }
 });
-
+ 
 // Initially load some items.
