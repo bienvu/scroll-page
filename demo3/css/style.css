@@ -1,8 +1,21 @@
 #infinite-list {
   /* We need to limit the height and show a scrollbar */
-  width: 100%;
+  /* width: 100%;
   height: 100%;
+  overflow: auto; */
+
+  width: 100%;
+  height: 100vh;
   overflow: auto;
+}
+
+#infinite-list div {
+  line-height: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Optional eye candy below: */
