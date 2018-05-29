@@ -44,12 +44,12 @@ var updateScheduled = false;
     }
 $(window).on('scroll', function() {
   if(!updateScheduled) {
-    setTimeout(function() {
+    // setTimeout(function() {
       var spinner=$(".spinner")
       if(onscreen(spinner))
-      load(250); //if we are at the page bottom add 250 more images!
-      updateScheduled = false;
-    }, 500);
+      load(1); //if we are at the page bottom add 250 more images!
+      // updateScheduled = false;
+    // }, 500);
     updateScheduled = true;
   }
 });

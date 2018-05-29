@@ -32,7 +32,7 @@ var loadMore = function() {
 //     });
 
 // Detect when scrolled to bottom.
-listElm.on('scroll', function() {
+listElm.on('scroll touch', function() {
   var heightScroll = document.getElementById("infinite-list").scrollHeight,
       heightScreen = listElm.height(),
       topSpace = listElm.scrollTop();
