@@ -27,7 +27,7 @@ init=function(){
 load=function(num){
   var mainList = $('#list-view');
   for (var i =  num- 1; i >= 0; i--) {
-    var html='<div> <a href="#"> <img class="pic" data-original="http://farm5.staticflickr.com/4092/4985955642_01bc52672e.jpg" style="width: 512px; height: 360.208px;" ></img></a><div>'
+    var html='<div> <a href="#"> <img class="pic" data-original="https://bienvu.github.io/scroll-page/demo4/tipico.jpg" style="width: 512px; height: 360.208px;" ></img></a><div>'
     mainList.data('listView').append( html )
   };
 }
