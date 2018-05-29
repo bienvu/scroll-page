@@ -40,7 +40,7 @@ load=function(num){
 var updateScheduled = false;
     function onscreen($el) {
       var viewportBottom = $(window).scrollTop() + $(window).height();
-      return $el.offset().top <= viewportBottom;
+      return $el.offset().top <= viewportBottom - 100;
     }
 $(window).on('scroll', function() {
   if(!updateScheduled) {
