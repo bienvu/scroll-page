@@ -14,6 +14,10 @@
   bottom: 0; */
 }
 
+body {
+  background: #000;
+}
+
 #infinite-list div {
   line-height: 0;
 }
