@@ -1,8 +1,7 @@
 
 $(document).ready(function() {
   loadMore();
-
-
+  loadPrev();
 });
 
 var listElm = $('#infinite-list');
