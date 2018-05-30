@@ -78,7 +78,7 @@ $(window).scroll(function() {
       loadMore();
     }
   } else {
-    if (scroll + heightScreen >= 200) {
+    if (scroll + heightScreen <= 200) {
       loadPrev();
     }
   }
