@@ -1,13 +1,13 @@
-var bgHeight = 1600; // pixel height of background image
+var bgHeight = 6864; // pixel height of background image
 
 $(document).ready(function() {
     $('body').height( bgHeight + $(window).height() );
     $(window).scroll(function() {
-        if ( $(window).scrollTop() >= ($('body').height() - $(window).height()) ) {
+        if ( $(window).scrollTop() >= ($('body').height() - $(window).height()) - 200 ) {
             $(window).scrollTop(1);
         }
         else if ( $(window).scrollTop() == 0 ) {
-            $(window).scrollTop($('body').height() - $(window).height() -1);
+            $(window).scrollTop($('body').height() - $(window).height() - 200);
         }
     });
 });
