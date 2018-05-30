@@ -113,12 +113,17 @@ textarea {
 
 
 body {
-    height: 1600px;
     background-image: url("https://bienvu.github.io/scroll-page/demo4/tipico.jpg");
     background-position: top center;
+    background-size: 100% auto;
+    background-color: #000;
 }
 
-
+.image img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
 
 
 
